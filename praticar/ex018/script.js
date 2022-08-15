@@ -19,7 +19,7 @@ function contar(){
             window.alert = "Não é possível contar utilizando passo 0. Atualizando passo para [1]"
             passo == 1
         }else{
-            if (inicio >= final){
+            if (inicio >= final || passo < 0){
                 for (var c = inicio; c >= final; c -= passo){
                     aviso.innerHTML += `${c} 👉`
                 }
